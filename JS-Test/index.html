@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1441d9e9b5.js" crossorigin="anonymous"></script>
     <title>Kebook JS Test</title>
 </head>
 <body>
-    <section>
+    <main>
         <div>
             <h1>Nossos planos</h1>
             <p>
@@ -20,20 +21,35 @@
             <h3>Selecione a quantidade de perfis</h3>
         </div>
         <div>
-            <i>
-                seta_esquerda
-            </i>
-            <p>1</p>
-            <i>seta_direita</i>
-            <p> slider</p>
+            <div class="arrow-selector">
+                <button type="text">
+                    <i class="fa-solid fa-caret-left" id="left"></i>
+                </button>
+                <p id="quantidade">1</p>
+                <button type="text">
+                    <i class="fa-solid fa-caret-right" id="right"></i>
+                </button>  
+            </div>
+            <div class="range">
+                <div class="form-group range__slider">
+                    <input id="slider" value="1" type="range" min="1" max="10" step="1" start="1">
+                </div>
+            </div>
             <h3>Cada perfil contempla</h3>
-            <p> ícones</p>
+            <div class="icons">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-twitch"></i>
+            </div>
+            
         </div>
         <div>
             <h3>Selecione o período do seu pagamento</h3>
-            <div>
-                <button>Mensal</button>
-                <button>Anual</button>
+            <div class="plan_type">
+                <button type="text" class="btn_monthly">Mensal</button>
+                <button type="text" class="btn_annuity">Anual</button>
             </div>
             <div>
                 <div>
@@ -48,7 +64,8 @@
                 </div>
             </div>   
         </div>
-    </section>
-    
+    </main>
+    <script src="./index.js"></script>
 </body>
+
 </html>
