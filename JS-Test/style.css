@@ -1,29 +1,75 @@
 *{
     font-family:'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 button{
     cursor: pointer;
+    border: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+.wrapper{
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+.wrapper h3{
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.container h1{
+    text-transform: capitalize;
+}
+.selectors {
+    border-radius: 33px;
+    box-shadow: 0 0 10px black;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 2vh;
 }
 .arrow-selector{
     display: flex;
+    font-size: 5rem;
+    justify-content: space-between;
+}
+.arrow-selector i {
+    font-size: 3rem;
 }
 .arrow-selector button{
     background: none;
     border: none;
 }
-.range {
-    display: flex;
-    width: 600px;
+.selectors input{
+    width: 30vw;
 }
 .icons{
     display: flex;
-    gap: 5%;
+    gap: 3vw;
     align-items: center;
 }
 .fa-brands{
     border-radius: 100%;
     color: white;
-    font-size: 12px;
+    font-size: 20px;
 }
 .fa-instagram{
     padding: 5px 6px;
@@ -45,24 +91,69 @@ button{
     padding: 5px;
     background-color: #A345F0;
 }
-.plan_type{
+.total-price-plan{
     display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 60%;
 }
-
-.btn_monthly{
+.plan-type{
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 -1px 10px black;
     border: none;
-    border-radius: 30px 0 0 30px;
+    width: 80%;
+    align-self: center;
+}
+.btn_monthly{
     padding: 10px;
     color: white;
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+    background: linear-gradient(to right,#c86ef9 , #7839dd);
+    font-size: 40px;
 }
-
 .btn_annuity{
     color: white;
-    border: none;
-    border-radius: 0 30px 30px 0;
     padding: 10px;
+    width: 100%;
+    border-radius: 0 30px 30px 0;
+    font-size: 40px;
 }
-
 #annuity{
     display: none;
+}
+.plan-price{
+    width: 100%;
+    border-radius: 33px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,#c86ef9 , #7839dd);
+    color: white;
+    border-radius: 33px 33px 0 0;
+}
+.price{ 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-size: 2rem;
+}
+.plan-price button{
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    background: linear-gradient(to right,#c86ef9 , #7839dd);
+    color: white;
+    width: 30%;
+    align-self: center;
+    margin-bottom: 5vh;
+    font-size: 1rem;
 }
