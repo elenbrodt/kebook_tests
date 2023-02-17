@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Author: Elen Brodt, Kebook JS Test">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,16 +32,19 @@
         <div class="selectors">
             <form>
               <div class="arrow-selector">
-                <button type="button">
+                <button type="button" aria-label="esquerda">
                   <i class="fa-solid fa-caret-left" id="left"></i>
                 </button>
                 <p id="quantidade">1</p>
-                <button type="button">
+                <button type="button" aria-label="direita">
                   <i class="fa-solid fa-caret-right" id="right"></i>
                 </button>
               </div>
               <div class="range-input">
                 <span class="progress-before"></span>
+                <label for="slider" aria-label="Selecione a quantidade de planos">
+                  
+                </label>
                   <input
                   id="slider"
                   value="1"
@@ -61,14 +65,14 @@
           </div>
         </div>
         <div class="total-price-plan">
-          <h3>Selecione o período do seu pagamento</h3>
+          <h4>Selecione o período do seu pagamento</h4>
           <div class="plan-type">
             <button type="button" class="btn_monthly">Mensal</button>
             <button type="button" class="btn_annuity">Anual</button>
           </div>
           <div class="plan-price">
             <div class="info">
-              <h4>Plano Completo</h4>
+              <h2>Plano Completo</h2>
               <p class="monthly">Equivalente Mensalidade</p>
               <p class="annuity">Equivalente Anuidade</p>
             </div>

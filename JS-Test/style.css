@@ -34,6 +34,9 @@ main{
 .our-plans h3{
     text-transform: uppercase;
 }
+.our-plans h4 {
+    text-transform: uppercase;
+}
 .title-plans{
     display: flex;
     flex-direction: column;
@@ -71,9 +74,7 @@ main{
     font-weight: 800;
     font-size: 5rem;
 }
-.selectors h4 {
-    text-transform: uppercase;
-}
+
 .arrow-selector button{
     background: none;
     border: none;
@@ -118,7 +119,6 @@ input[type=range]::-moz-range-thumb {
     box-shadow: 0 0 10px black;
     margin-bottom: 50px;
 }
-
 .range-input{
     position: relative;
     display: flex;
@@ -177,34 +177,36 @@ input[type=range]::-moz-range-thumb {
 .total-price-plan{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 .plan-type{
     display: flex;
-    border-radius: 80px;
+    border-radius: 100px;
     box-shadow: 0 0 10px black;
     border: none;
-    width: 500px;
-    height: 80px;
+    width: 450px;
+    height: 100px;
     align-self: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 .btn_monthly{
     color: white;
     flex: 1 1 auto;
-    border-radius: 40px 0 0 40px;
+    border-radius: 50px 0 0 50px;
     background: linear-gradient(to right,#c86ef9 , #7839dd);
     font-size: 2rem;
     font-weight: 300;
 }
 .btn_annuity{
     color: #8A898D;
-    border-radius: 0 40px 40px 0;
+    border-radius: 0 50px 50px 0;
     font-size: 2rem;
     flex: 1 1 auto;
     background-color: white;
     font-weight: 300;
 }
+/************************************************************************/
 .annuity{
     display: none;
 }
@@ -213,17 +215,20 @@ input[type=range]::-moz-range-thumb {
     box-shadow: 0 0 10px black;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     background-color: white;
+    width: 800px;   
 }
-
 .info {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right,#c86ef9 , #7839dd);
     color: white;
     border-radius: 33px 33px 0 0;
-    padding: 30px;
+    padding: 20px;
+}
+.info p{
+    font-weight: 300;
 }
 .price{ 
     display: flex;
@@ -240,7 +245,7 @@ input[type=range]::-moz-range-thumb {
     background: linear-gradient(to right,#c86ef9 , #7839dd);
     color: white;
     align-self: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 1rem;
     box-shadow: 0 0 10px black;
 }
