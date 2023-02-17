@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --background: #eaf4f5;
+    --primary: #59585F;
+}
 button{
     cursor: pointer;
     border: none;
@@ -13,123 +17,204 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vh;
+    padding: 30px;
+    color: var(--primary);
+    background: var(--background);
 }
 
-.wrapper{
-    width: 80vw;
+.our-plans{
+    max-width: 1040px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3vh;
+    gap: 30px;
 }
-.wrapper h3{
+.our-plans h3{
     text-transform: uppercase;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-}
-.container h1{
-    text-transform: capitalize;
-}
-.selectors {
-    border-radius: 33px;
-    box-shadow: 0 0 10px black;
-    padding: 5vh;
+.title-plans{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.title-plans h1{
+    text-transform: capitalize;
+}
+.title-plans p{
     width: 60%;
-    gap: 2vh;
+    text-align: center;
+}
+/**************************************************************************/
+.selectors {
+    border-radius: 33px;
+    box-shadow: 0 0 10px var(--primary);
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 .arrow-selector{
     display: flex;
-    font-size: 5rem;
     justify-content: space-between;
 }
 .arrow-selector i {
     font-size: 3rem;
+    color: var(--primary);
+}
+.arrow-selector p {
+    font-weight: 800;
+    font-size: 5rem;
+}
+.selectors h4 {
+    text-transform: uppercase;
 }
 .arrow-selector button{
     background: none;
     border: none;
 }
-.selectors input{
-    width: 30vw;
+.selectors input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+    margin-top: -5px;
+} 
+input[type=range]::-webkit-slider-runnable-track {
+    height: 16px;
+    border-radius: 50px;
+    position: relative;
+    z-index:1;
+}
+input[type=range]::-moz-range-track {
+    height: 16px;
+    border-radius: 50px;
+    position: relative;
+    z-index:1;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: whitesmoke;
+    box-shadow: 0 0 10px black; 
+    z-index: 1;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    background: whitesmoke;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 50px;
+}
+
+.range-input{
+    position: relative;
+    display: flex;
+}
+.progress-before{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 8px;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, rgba(255,55,210,1) 0%, rgba(245,179,9,1) 48%, rgba(255,244,8,1) 100%);
+    z-index: 0;
+    width:0%;
+}
+.progress-after{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 8px;
+    background: #eeeeee;
+    z-index: 0;
+    width:100%;
 }
 .icons{
     display: flex;
-    gap: 3vw;
+    width: 300px;
     align-items: center;
+    justify-content: space-between;
 }
 .fa-brands{
-    border-radius: 100%;
+    border-radius: 50px;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
 }
 .fa-instagram{
-    padding: 5px 6px;
+    padding: 10px;
     background-color: #F191E5;
 }
 .fa-youtube{
-    padding: 5px 4px;
+    padding: 10px 8px;
     background-color: #EA235F;
 }
 .fa-facebook{
-    padding: 5px;
+    padding: 10px;
     background-color: #259EE7;
 }
 .fa-twitter{
-    padding: 5px;
+    padding: 10px;
     background-color: #57C0FF;
 }
 .fa-twitch{
-    padding: 5px;
+    padding: 10px;
     background-color: #A345F0;
 }
+/*******************************************************************/
 .total-price-plan{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    width: 60%;
+    gap: 30px;
 }
 .plan-type{
     display: flex;
-    border-radius: 30px;
-    box-shadow: 0 -1px 10px black;
+    border-radius: 80px;
+    box-shadow: 0 0 10px black;
     border: none;
-    width: 80%;
+    width: 500px;
+    height: 80px;
     align-self: center;
+    justify-content: center;
 }
 .btn_monthly{
-    padding: 10px;
     color: white;
-    width: 100%;
-    border-radius: 30px 0 0 30px;
+    flex: 1 1 auto;
+    border-radius: 40px 0 0 40px;
     background: linear-gradient(to right,#c86ef9 , #7839dd);
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: 300;
 }
 .btn_annuity{
-    color: white;
-    padding: 10px;
-    width: 100%;
-    border-radius: 0 30px 30px 0;
-    font-size: 40px;
+    color: #8A898D;
+    border-radius: 0 40px 40px 0;
+    font-size: 2rem;
+    flex: 1 1 auto;
+    background-color: white;
+    font-weight: 300;
 }
-#annuity{
+.annuity{
     display: none;
 }
 .plan-price{
-    width: 100%;
     border-radius: 33px;
     box-shadow: 0 0 10px black;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 50px;
+    background-color: white;
 }
 
 .info {
@@ -138,6 +223,7 @@ main{
     background: linear-gradient(to right,#c86ef9 , #7839dd);
     color: white;
     border-radius: 33px 33px 0 0;
+    padding: 30px;
 }
 .price{ 
     display: flex;
@@ -150,10 +236,11 @@ main{
     border: none;
     border-radius: 30px;
     height: 50px;
+    width: 200px;
     background: linear-gradient(to right,#c86ef9 , #7839dd);
     color: white;
-    width: 30%;
     align-self: center;
-    margin-bottom: 5vh;
+    margin-bottom: 50px;
     font-size: 1rem;
+    box-shadow: 0 0 10px black;
 }

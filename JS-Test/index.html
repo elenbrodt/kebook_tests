@@ -19,8 +19,8 @@
   </head>
   <body>
     <main>
-      <div class="wrapper">
-        <div class="container">
+      <section class="our-plans">
+        <div class="title-plans">
           <h1>Nossos planos</h1>
           <p>
             Selecione o número de clientes que deseja gerenciar para ver nossos
@@ -28,7 +28,6 @@
           </p>
         </div>
         <h3>Selecione a quantidade de perfis</h3>
-      
         <div class="selectors">
             <form>
               <div class="arrow-selector">
@@ -40,17 +39,19 @@
                   <i class="fa-solid fa-caret-right" id="right"></i>
                 </button>
               </div>
-              <input
-                id="slider"
-                value="1"
-                type="range"
-                min="1"
-                max="10"
-                step="1"
-              />
+              <div class="range-input">
+                <span class="progress-before"></span>
+                  <input
+                  id="slider"
+                  value="1"
+                  type="range"
+                  min="1"
+                  max="10"
+                />
+                <span class="progress-after"></span>
+              </div>  
             </form>
-          
-          <h3>Cada perfil contempla</h3>
+          <h4>Cada perfil contempla</h4>
           <div class="icons">
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -68,8 +69,8 @@
           <div class="plan-price">
             <div class="info">
               <h4>Plano Completo</h4>
-              <p id="monthly">Equivalente Mensalidade</p>
-              <p id="annuity">Equivalente Anuidade</p>
+              <p class="monthly">Equivalente Mensalidade</p>
+              <p class="annuity">Equivalente Anuidade</p>
             </div>
             <div class="price">
                 <p>R$</p>
@@ -81,7 +82,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <script src="./index.js"></script>
   </body>

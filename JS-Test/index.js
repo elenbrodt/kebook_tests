@@ -2,13 +2,16 @@ const numero = document.getElementById("quantidade");
 const left = document.getElementById("left");
 const right = document.getElementById("right");
 
+const progressBefore = document.querySelector(".progress-before");
+const progressAfter = document.querySelector(".progress-after");
+
 const input = document.getElementById("slider");
 
 const btn_monthly = document.querySelector(".btn_monthly");
 const btn_annuity = document.querySelector(".btn_annuity");
 
-const monthly = document.querySelector("#monthly");
-const annuity = document.querySelector("#annuity");
+const monthly = document.querySelector(".monthly");
+const annuity = document.querySelector(".annuity");
 
 const price = document.querySelector(".price span");
 
@@ -27,8 +30,11 @@ function decreaseProfiles (){
     if (count > 1){
         count = parseInt(count) - 1;
         numero.innerHTML = `${count}`;
-        slider.value = count;
+        input.value = count;
         changePrice();
+        left.setAttribute("disabled", "false");
+    }if (count ===1){
+        left.setAttribute("disabled", "true");
     }
 }
 
@@ -36,16 +42,20 @@ function increaseProfiles (){
     if (count < 10){
         count = parseInt(count) + 1;
         numero.innerHTML = `${count}`;
-        slider.value = count;
+        input.value = count;
         changePrice();
     } 
 }
 
-slider.onchange = ()=> {
-    count = slider.value;
-    numero.innerHTML = `${count}`;
-    changePrice();
-}
+input.addEventListener('input', handleInputChange);
+right.addEventListener('click', change)
+left.addEventListener('click', change)
+
+function change () {
+    const result = percentageChange(count);
+    progressBefore.style.width = result+'%';
+    progressAfter.style.width = (100-result)+'%';
+} 
 
 btn_monthly.onclick = () => {
     toggle = !toggle;
@@ -58,17 +68,35 @@ btn_annuity.onclick = () => {
     changePrice();
 }
 
+function percentageChange (num){
+    return (num-1)/(9)*100 ;
+}
+
+function handleInputChange(e) {
+    let target = e.target;
+    count = target.value;
+    const result = percentageChange(count);
+    progressBefore.style.width = result+'%';
+    progressAfter.style.width = (100-result)+'%';
+    numero.innerHTML = `${count}`;
+    changePrice();
+}
+
 function changeBackground(){
     if (toggle){
         btn_monthly.style.background = "linear-gradient(to right,#c86ef9 , #7839dd)";
-        btn_annuity.style.background = "#F1EAF7";
+        btn_annuity.style.background = "white";
         monthly.style.display = "block";
         annuity.style.display = "none";
+        btn_annuity.style.color = "#8A898D";
+        btn_monthly.style.color = "white";
     }else{
         btn_annuity.style.background = "linear-gradient(to right,#c86ef9 , #7839dd)";
-        btn_monthly.style.background = "#F1EAF7";
+        btn_monthly.style.background = "white";
         annuity.style.display = "block";
         monthly.style.display = "none";
+        btn_monthly.style.color = "#8A898D";
+        btn_annuity.style.color = "white";
     }
 }
 
