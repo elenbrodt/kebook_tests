@@ -37,7 +37,6 @@ nav, ul{
 .logo{
   display: flex;
   align-items: center;
-
 }
 .logo img{
   width: 125px;
@@ -108,26 +107,25 @@ nav, ul{
     width: 400px;
     position: relative;
     z-index: 1;
-    top: 60px;
+    top: 70px;
 }
 .advantages{
     display: flex;
     background-color: #e9ecef;
     color: #3E464F;
     justify-content: center;
-    padding-top: 40px;
-    height: 300px;
+    height: 250px;
     align-items: center;
+    gap: 30px;
 }
 .advantage{
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 .advantage h2{
-  width: 200px;
+  width: 150px;
   font-size: 18px;
   font-weight: 800;
 }
@@ -187,4 +185,48 @@ nav, ul{
 .search-box{
   display: flex;
   gap: 2px;
+}
+
+@media (max-width: 992px){
+  header{
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  
+  nav, ul{
+    display: none;
+  }
+  .info-login{
+    width: 100px;
+  }
+  .advantages{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    gap: 5px;
+  }
+  .ilustra-home{
+    display: none;
+  }
+  .info-login{
+    width: 600px;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .info-btns{
+    width: 600px;
+  }
+  .info{
+    justify-content: center;
+    margin: auto 40px;
+    width: 800px;
+  }
+  .info-text{
+    width: 800px;
+  }
+  .advantage h2{
+    width: 200px;
+  }
+  
 }
