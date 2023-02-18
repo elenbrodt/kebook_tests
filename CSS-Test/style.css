@@ -136,14 +136,14 @@ nav, ul{
   width: 80px;
 }
 .category{
-  display: flex;
+  display: none;
   align-items: center;
   gap: 5px;
 }
 
 .hamburger {
   width: 1em;
-  height: 12px;
+  height: 20px;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@ nav, ul{
 
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
-  margin-top: 5px;
+  margin-top: 11px;
 }
 #toggle:checked + .hamburger .bottom-bun {
   opacity: 0;
@@ -174,59 +174,78 @@ nav, ul{
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -6px;
+  margin-top: -9px;
 }
 
 .search-input{
   display: none;
   border: solid 1px white;
   border-radius: 50px;
+  padding-left: 10px;
+  height: 40px;
+  
 }
 .search-box{
   display: flex;
-  gap: 2px;
+  gap: 10px;
+  align-items: center;
+  padding-right: 20px;
 }
 
+.modal-category{
+  display: none;
+}
 @media (max-width: 992px){
   header{
-    font-size: 14px;
-    justify-content: space-between;
+    font-size: 24px;
   }
-  
-  nav, ul{
+  .menu{
     display: none;
   }
-  .info-login{
-    width: 100px;
+  ul, nav{
+    justify-content: flex-end;
+    width: 300px;
+  }
+
+  .search-box{
+    display: none;
+  }
+  .login{
+    display: none;
   }
   .advantages{
     flex-direction: column;
     flex-wrap: wrap;
     height: 400px;
     gap: 5px;
+
   }
   .ilustra-home{
     display: none;
   }
   .info-login{
-    width: 600px;
+    max-width: 600px;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 3px;
   }
-  
   .info-btns{
-    width: 600px;
+    max-width: 600px;
   }
   .info{
     justify-content: center;
     margin: auto 40px;
-    width: 800px;
+    max-width: 800px;
   }
   .info-text{
-    width: 800px;
+    max-width: 600px;
   }
   .advantage h2{
-    width: 200px;
+    max-width: 200px;
   }
-  
+  .category{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
 }
