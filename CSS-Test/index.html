@@ -18,28 +18,36 @@
 </head>
 <body>
     <header>
-        <a href="#" ><img class="logo" src="./images/logo_kebook.PNG"></a>
+        <a href="#" class="logo" aria-label="Kebook"><img  src="./images/logo_kebook.PNG" alt="logo Kebook"></a>
         <nav>
-            <a href="#"><li>Categorias 
-                <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-            </li></a>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Instrutor</li></a>
-            <a href="#"><li>Afiliado</li></a>
-            <a href="#"><li>Suporte</li></a>
-            <a href="#"><li>Carreiras</li></a>
+            <ul>
+                <a href="#" class="category" aria-label="Categorias"><li>Categorias</li>
+                    <input id="toggle" type="checkbox"></input>
+                    <label for="toggle" class="hamburger">
+                        <div class="top-bun"></div>
+                        <div class="meat"></div>
+                        <div class="bottom-bun"></div>
+                    </label>
+                </a>
+                <a href="#" aria-label="Home"><li>Home</li></a>
+                <a href="#" aria-label="Sobre"><li>Sobre</li></a>
+                <a href="#" aria-label="Instrutor"><li>Instrutor</li></a>
+                <a href="#" aria-label="Afiliado"><li>Afiliado</li></a>
+                <a href="#" aria-label="Suporte"><li>Suporte</li></a>
+                <a href="#" aria-label="Carreiras"><li>Carreiras</li></a>
+            </ul>
+            
         </nav>
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i> Login | Inscrever-se</a>
+            <div class="search-box ">
+                <a href="#" class="search-icon" aria-label="Busca"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input class="search-input" type="text"></input>
+            </div>
+            <div class="login">
+                <a href="#" aria-label="Login"><i class="fa-solid fa-user"></i> Login | Inscrever-se</a>
+            </div>
+        
     </header>
     <main>
-       
         <section class="info">
             <div class="info-text">
                 <h1>Investir em Seu <strong>Futuro</strong></h1>
@@ -57,26 +65,27 @@
         </section>
         <section class="advantages">
             <div class="advantage">
-                <img src="./images/smiley-sunglasses.png">
-                <h4>Aprenda com especialistas</h4>
+                <img src="./images/smiley-sunglasses.png" alt="Especialistas">
+                <h2>Aprenda com especialistas</h2>
                 <p>Selecione cursos dos melhores instrutores do mercado</p>
             </div>
             <div class="advantage">
-                <img src="./images/money.png">
-                <h4>Maior empregabilidade</h4>
+                <img src="./images/money.png" alt="Empregabilidade">
+                <h2>Maior empregabilidade</h2>
                 <p>Invista no desenvolvimento da sua carreira e vida pessoal</p>
             </div>
             <div class="advantage">
-                <img src="./images/happy.png">
-                <h4>Siga no seu próprio ritmo</h4>
+                <img src="./images/happy.png" alt="Estudo">
+                <h2>Siga no seu próprio ritmo</h2>
                 <p>Defina seu ritmo de estudo conforme a sua disponibilidade</p>
             </div>
             <div class="advantage">
-                <img src="./images/play.png">
-                <h4>Torne-se um instrutor</h4>
+                <img src="./images/play.png" alt="Instrutor">
+                <h2>Torne-se um instrutor</h2>
                 <p>Possua as ferramentas ideais para ensinar o que você ama</p>
             </div>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
