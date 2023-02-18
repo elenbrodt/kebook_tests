@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{
+    font-family:'Nunito';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-image: url('https://kebook.com.br/files/imgs/back-top-home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat:  no-repeat;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+.logo{
+    width: 150px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-btns-shop{
+    background: orangered;
+    border-radius: 1rem;
+    padding: 10px;
+    border: 2px solid orangered;
+}
+.info-btns-teach{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 1rem;
+}
+.advantage img{
+    width: 50px;
+}
+.info-login{
+    display: flex;
+    width: 400px;
+}
+.info-login a{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.info-text h1{
+    font-weight: 300;
+}
+.ilustra-home{
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    top: 60px;
+}
+.advantages{
+    display: flex;
+    background-color: #e9ecef;
+    color: #3E464F;
+}
+.advantages i{
+    font-size: 1rem;
+    color: #3E464F;
+}
+
+
+.checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+  .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }  
