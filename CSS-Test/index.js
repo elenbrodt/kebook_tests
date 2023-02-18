@@ -18,7 +18,7 @@ searchIcon.onclick=()=>{
 
 checkbox.onclick = ()=>{
     if (toggle){
-        modalCategory.style.display = 'block';
+        modalCategory.style.display = 'flex';
         toggle = !toggle;
     } 
     else{

@@ -139,8 +139,12 @@ nav, ul{
   display: none;
   align-items: center;
   gap: 5px;
+  
 }
-
+.category-box{
+  display: flex;
+  flex-direction: column;
+}
 .hamburger {
   width: 1em;
   height: 20px;
