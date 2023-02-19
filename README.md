@@ -6,7 +6,7 @@
  
  <p align="center">
 
-  <img src="./CSS-Test/images/CSS_SEO" alt="SEO" width="300"/>
+  <img src="/CSS-Test/images/CSS_SEO" alt="SEO" width="300"/>
 
 <p align="center">
 
@@ -16,6 +16,6 @@
  
  <p align="center">
 
-  <img src="./JS-Test/images/CSS_SEO" alt="SEO" width="300"/>
+  <img src="/JS-Test/images/CSS_SEO" alt="SEO" width="300"/>
 
 <p align="center">
