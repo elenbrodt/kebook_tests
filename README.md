@@ -1,23 +1,19 @@
 # kebook_tests
 
-#CSS Test
+**CSS Test
 
  ✨[SEO Report]
- 
- <p align="center">
+<p align="center">
 
   <img src="/CSS-Test/images/CSS_SEO.PNG" alt="SEO" width="300"/>
 
 <p align="center">
 
 ✨[Home - screenshot]
- <p align="center">
 
-  <img src="/CSS-Test/images/home.PNG" alt="CSS print" width="300"/>
+ <img src="/CSS-Test/images/home.PNG" alt="CSS print" width="300"/>
 
-<p align="center">
-
-#JS Test
+**JS Test
 
  ✨[SEO Report]
  
@@ -28,8 +24,5 @@
 <p align="center">
 
 ✨[Home - screenshot]
- <p align="center">
 
-  <img src="/JS-Test/images/home.PNG" alt="CSS print" width="300"/>
-
-<p align="center">
+ <img src="/JS-Test/images/home.PNG" alt="CSS print" width="300"/>
