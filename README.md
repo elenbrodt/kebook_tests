@@ -1,6 +1,6 @@
 # kebook_tests
 
-##CSS Test
+#CSS Test
 
  ✨[SEO Report]
  
@@ -10,12 +10,26 @@
 
 <p align="center">
 
-##JS Test
+✨[Home - screenshot]
+ <p align="center">
+
+  <img src="/CSS-Test/images/home.PNG" alt="CSS print" width="300"/>
+
+<p align="center">
+
+#JS Test
 
  ✨[SEO Report]
  
  <p align="center">
 
   <img src="/JS-Test/images/JS_SEO.PNG" alt="SEO" width="300"/>
+
+<p align="center">
+
+✨[Home - screenshot]
+ <p align="center">
+
+  <img src="/JS-Test/images/home.PNG" alt="CSS print" width="300"/>
 
 <p align="center">
