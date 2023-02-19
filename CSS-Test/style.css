@@ -40,6 +40,7 @@ nav, ul{
 }
 .logo img{
   width: 125px;
+  height: 42px;
   align-self: center;
 }
 .info{
@@ -65,7 +66,6 @@ nav, ul{
     padding:  10px 35px;
     border-radius: 30px;
 }
-
 .info-login{
     display: flex;
     width: 310px;
@@ -82,7 +82,6 @@ nav, ul{
     flex-direction: column;
     gap: 20px;
     width: 530px;
-    
 }
 .info-text h1{
     font-weight: 300;
@@ -105,6 +104,7 @@ nav, ul{
 }
 .ilustra-home{
     width: 400px;
+    height: 365px;
     position: relative;
     z-index: 1;
     top: 70px;
@@ -139,7 +139,6 @@ nav, ul{
   display: none;
   align-items: center;
   gap: 5px;
-  
 }
 .category-box{
   display: flex;
@@ -154,7 +153,6 @@ nav, ul{
   justify-content: space-between;
   cursor: pointer;
 }
-
 .hamburger div {
   position: relative;
   width: 1em;
@@ -163,11 +161,9 @@ nav, ul{
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
-
 #toggle {
   display: none;
 }
-
 #toggle:checked + .hamburger .top-bun {
   transform: rotate(-45deg);
   margin-top: 11px;
@@ -180,14 +176,15 @@ nav, ul{
   transform: rotate(45deg);
   margin-top: -9px;
 }
-
 .search-input{
   display: none;
   border: solid 1px white;
   border-radius: 50px;
   padding-left: 10px;
   height: 40px;
-  
+}
+input:focus{
+  outline: none;
 }
 .search-box{
   display: flex;
@@ -195,9 +192,12 @@ nav, ul{
   align-items: center;
   padding-right: 20px;
 }
-
 .modal-category{
   display: none;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 10px;
 }
 @media (max-width: 992px){
   header{
@@ -251,5 +251,17 @@ nav, ul{
     align-items: center;
     gap: 10px;
   }
-
+  .modal-category{
+    flex-direction: column;
+    background-color: #e9ecef;
+    width: 200px;
+    margin-top: 10px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 33px ;
+    padding-bottom: 8px;
+  }
+  .modal-category a{
+    color: orange;
+  }
 }
